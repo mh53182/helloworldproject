@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 # 下で呼び出す関数がどこにあるか指示をする
 # ".views"で同階層内の"views"ファイルを参照
-from .views import helloworldfunction
+from .views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # 任意のURLを指定、呼び出す関数名
-    path('helloworld/', helloworldfunction)
+    path('helloworld/', helloworldfunction),
+    path('a/', someview),
+    path('helloworld2/', HelloWorldClass.as_view()),
 ]

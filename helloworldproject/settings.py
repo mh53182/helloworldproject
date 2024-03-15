@@ -54,7 +54,9 @@ ROOT_URLCONF = 'helloworldproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # Djangoではviews.pyで呼び出すテンプレートがどこに保存されているか明示的に指示が必要。
+        # どこでも構わないが一般的には"BASE_DIR"(=manage.pyがある階層)"templates"フォルダを作成する
+        'DIRS': [BASE_DIR / 'templates'], 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
