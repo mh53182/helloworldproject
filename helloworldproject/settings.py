@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # python manage.py startappコマンドで作ったアプリをここに追記
+    # 後半のアプリ名はキャピタル/Configも
+    'helloworldapp.apps.HelloworldappConfig',
+    
 ]
 
 MIDDLEWARE = [
