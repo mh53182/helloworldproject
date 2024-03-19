@@ -14,8 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-# 下で呼び出す関数がどこにあるか指示をする
+from django.urls import path, include #projectのurlsからappのurlsを呼び出すときにincludeが必要(多分)
+# urlpatternsで呼び出す関数がどこにあるか指示をする
 # ".views"で同階層内の"views"ファイルを参照
 from .views import *
 

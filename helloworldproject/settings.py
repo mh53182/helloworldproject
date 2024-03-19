@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # python manage.py startappコマンドで作ったアプリをここに追記
-    # 後半のアプリ名はキャピタル/Configも
+    # 後半のアプリ名はキャピタル/後ろにConfigも付ける
     'helloworldapp.apps.HelloworldappConfig',
     
 ]
